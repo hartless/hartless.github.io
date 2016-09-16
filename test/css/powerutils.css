@@ -1502,8 +1502,6 @@ a[href$="pdf"]:after {
 
 .pdf,
 a[href$="pdf"]:after {
-    display: block !important;  ;
     display: none !important;
     overflow: hidden;
-    ;
 }
