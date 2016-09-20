@@ -12,7 +12,7 @@
 
 .stacked> :nth-child(1),
 .stacked> :nth-child(2) {
-    width: 48%;
+    width: 49%;
 }
 
 .stacked>:nth-child(3) {
@@ -1486,7 +1486,7 @@ a[href$="pdf"]:after {
     font-size: 223%;
     display: inline-block;
     font-weight: bold;
-    line-height: 0;
+    line-height: 1;
     float: left;
     top: 50%;
     position: absolute;
@@ -1498,6 +1498,7 @@ a[href$="pdf"]:after {
     position: relative;
     margin-left: 6.5em;
     line-height: 1.1;
+    overflow: hidden;
 }
 
 .pdf,
