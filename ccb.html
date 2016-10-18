@@ -319,11 +319,28 @@
         <script type="text/javascript">
         $(document).ready(function() {
           scrollTemplate.init();
+
+          $('.generic-modal-link').on('click', function(event) {
+            // Video.Play('#inlineVideoSection1','3918068765001');
+          });
+
+          // $('#myExperience').attr('autoStart', 'true')
+
+          $('.modal-close').on('click', function(event) {
+            $('.modal-content').html('');
+          });
+
         });
         </script>
         <style media="screen">
+        .section1 a.fig-item.generic-modal-link {
+          height: 368px;
+        }
         object#myExperience {
             height: 376px;
+        }
+        .section1 .carousel-cell.generic-modal-link * {
+            color: #fff;
         }
         </style>
         <div class="generic-modal-1" style="display: none">
@@ -331,7 +348,7 @@
           <p>Pip McCrostie talks M&amp;A on CNBC Squawk Box</p>
           <!-- <video src="http://players.brightcove.net/1066292269001/V1CXro3Ce_default/index.html?videoId=5040158757001"></video> -->
           <!-- <iframe src="http://players.brightcove.net/1066292269001/V1CXro3Ce_default/index.html?videoId=5040158757001" frameborder="0"></iframe> -->
-          <object type="application/x-shockwave-flash" id="myExperience" width="100%" height="270" class="BrightcoveExperience BrightcoveExperienceID_7444" seamlesstabbing="undefined" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=480&amp;height=270&amp;flashID=myExperience&amp;identifierClassName=BrightcoveExperienceID_7444&amp;bgcolor=%23FFFFFF&amp;playerID=4835204886001&amp;playerKey=AQ~~%2CAAAA-EP4z8k~%2Ctc77CdEXuhcuMtquPgxnr1-s5NUWzCJO&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;autoStart=true&amp;debuggerID=&amp;videoID=4861703637001&amp;%40videoPlayer=4861703637001&amp;startTime=1476806319199"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="window"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"></object>
+          <object type="application/x-shockwave-flash" id="myExperience" width="100%" height="270" class="BrightcoveExperience BrightcoveExperienceID_7444" seamlesstabbing="undefined" data="http://c.brightcove.com/services/viewer/federated_f9?&amp;width=480&amp;height=270&amp;flashID=myExperience&amp;identifierClassName=BrightcoveExperienceID_7444&amp;bgcolor=%23FFFFFF&amp;playerID=4835204886001&amp;playerKey=AQ~~%2CAAAA-EP4z8k~%2Ctc77CdEXuhcuMtquPgxnr1-s5NUWzCJO&amp;isVid=true&amp;isUI=true&amp;dynamicStreaming=true&amp;autoStart=false&amp;debuggerID=&amp;videoID=4861703637001&amp;%40videoPlayer=4861703637001&amp;startTime=1476806319199"><param name="allowScriptAccess" value="always"><param name="allowFullScreen" value="true"><param name="seamlessTabbing" value="false"><param name="swliveconnect" value="true"><param name="wmode" value="window"><param name="quality" value="high"><param name="bgcolor" value="#FFFFFF"></object>
         </div>
     </div>
         <section class="section1" id="section1" style="background-color:#FFFFFF">
